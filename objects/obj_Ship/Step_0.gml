@@ -21,3 +21,11 @@ audio_play_sound(snd_zap, 1, false);
 var inst = instance_create_layer(x, y, "Instances", obj_bullet);
 inst.direction = image_angle;
 }
+
+if global.pHealth < 0 {
+	global.pHealth = 0;
+}
+
+if global.pHealth > 3 {
+	global.pHealth = 3;
+}
